@@ -36,7 +36,7 @@ resource "aws_lb_listener" "frontend_alb" {
 
 resource "aws_route53_record" "frontend_alb" {
   zone_id = var.zone_id
-  name    = "roboshop-${var.environment}.${var.domain_name}" # roboshop-dev.daws86s.fun
+  name    = "roboshop-${var.environment}.${var.domain_name}" # roboshop-dev.dev86aws.fun
   type    = "A"
   allow_overwrite = true
 
