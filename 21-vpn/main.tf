@@ -15,7 +15,7 @@ resource "aws_instance" "openvpn" {
 
 resource "aws_route53_record" "openvpn" {
   zone_id = var.zone_id
-  name    = "openvpn.${var.domain_name}" # openvpn.daws86s.fun
+  name    = "openvpn.${var.domain_name}" # openvpn.dev86aws.fun
   type    = "A"
   ttl     = 1
   records = [aws_instance.openvpn.public_ip]
